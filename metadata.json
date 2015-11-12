@@ -1,0 +1,27 @@
+{
+  "name": "puppet-wso2base",
+  "version": "1.0.0",
+  "source": "https://github.com/suhand/puppet-wso2base.git",
+  "author": "Malintha Adikari, Suhan Dharmasuriya",
+  "license": "Apache-2.0",
+  "summary": "This module is to use as a base for any WSO2 puppet module",
+  "description": "",
+  "project_page": "https://github.com/suhand/puppet-wso2base",
+  "dependencies": [],
+  "tags": ["wso2", "wso2base", "wso2-puppet-module"],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Ubuntu",
+           "operatingsystemrelease": [ 
+              "12.04",
+              "14.04"
+          ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 3.0.0 < 5.0.0"
+    }
+  ]
+}
