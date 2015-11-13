@@ -15,12 +15,12 @@
 This is the base puppet module required by all WSO2 products puppet modules  
 
 ## Setup
-Copy the required files to ```/etc/puppet/files/java```  
+Copy the required files to ```/etc/puppet/modules/wso2base/files/java/```  
 Go through the ```FilesToCopyHere.txt``` readme file.
    
 #### Customize JDK versions
 e.g.: Installing JDK 7 Update 79 on Ubuntu x64  
-* Download and copy the file ```jdk-7u79-linux-x64.gz``` to  ```/etc/puppet/files/java``` location.  
+* Download and copy the file ```jdk-7u79-linux-x64.gz``` to  ```/etc/puppet/modules/wso2base/files/java/``` location.  
 * Update the java section of ```/etc/puppet/modules/wso2base/manifests/params.pp```   
 as follows,  
 ```
@@ -35,6 +35,7 @@ as follows,
 ```
 node default {  
 }  
+
 node base {  
     class { wso2base: }  
 }  

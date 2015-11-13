@@ -1,0 +1,21 @@
+You can copy the recommended maven version tarball here
+This will be used by the wso2base module to install maven
+
+e.g.:
+/etc/puppet/environments/production/modules/wso2base/files/maven
+                       `-- apache-maven-3.0.5-bin.tar.gz
+
+To use a custom maven version across the cluster you have to
+do the following.
+
+1. Go to /etc/puppet/environments/production/hieradata/wso2products/{deployment}
+   e.g.: deployment -> 'apimanager'
+2. Open common.yaml file to edit
+3. Under maven section give your required maven version
+
+e.g.:
+
+maven:
+ maven_home: apache-maven-3.0.5
+ maven_package_name: apache-maven-3.0.5-bin.tar.gz
+ maven_target_dir: /opt
