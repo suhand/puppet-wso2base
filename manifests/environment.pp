@@ -11,8 +11,6 @@ class wso2base::environment (
     ->
     exec { "source_file":
         path      => ["/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"],
-        user      => root,
-        group     => root,
         command   => "bash -c 'source /etc/environment'";
     }
 }

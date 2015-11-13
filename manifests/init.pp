@@ -11,8 +11,6 @@ class wso2base (
     ->
     class { hosts : }
     ->
-    class { environment :}
-    ->
     class { packages :}
     ->
     class { java :
@@ -26,4 +24,6 @@ class wso2base (
         maven_package_name => $maven[maven_package_name],
         maven_target_dir   => $maven[maven_target_dir],
     }
+    ->
+    class { environment :}
 }
