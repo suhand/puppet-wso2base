@@ -18,10 +18,10 @@ It will do the following,
 
 * create the users identified by owner
 * write to the ```/etc/hosts``` file the required information
-* write to the ```/etc/environmement``` file the required variables
 * install the basic packages required such as "htop", "lsof","unzip","sysstat","telnet", "git", "less", "tree"
 * install java
 * install maven
+* write to the ```/etc/environmement``` file the required variables
 
 ## Setup
 Copy the required files to ```/etc/puppet/modules/wso2base/files/java/```  
